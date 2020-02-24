@@ -19,11 +19,12 @@
   <tbody>
     <% @portfolios.each do |portfolio|%>
 
+        <div>
         <%= image_tag portfolio.thumb_image %>
+        </div>
         <p><%= portfolio.title %></p>
         <p><% portfolio.subtitle %></p>
         <p><% portfolio.content %></p>
-        
         <p><%= portfolio.media %></p>
         <p><%= link_to 'Show', portfolio %></p>
         <p><% link_to 'Edit', edit_portfolio_path(portfolio) %></p>

@@ -40,9 +40,14 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'pry-rails'
   gem 'pry-byebug'
+  gem 'cloudinary'
+  
 
 end
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+
+gem 'rails_12factor', group: :production
