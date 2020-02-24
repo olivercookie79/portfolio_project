@@ -15,24 +15,17 @@
   <%= @portfolio.content %>
 </p>
 
-<p>
-  <strong>Main image:</strong>
-  <%= @portfolio.main_image %>
-</p>
 
-<p>
-  <strong>Thumb image:</strong>
-  <%= @portfolio.thumb_image %>
-</p>
+
 
 <p>
   <strong>Media:</strong>
   <%= @portfolio.media %>
 </p>
 
-<%# <% if @portfolio.image.present? %>
-  <%# <%= image_tag @portfolio.image, alt: @planet.name, class: 'portfolios'  %>
-<%# <% end %> 
+
+  <%= image_tag @portfolio.main_image %>
+<%# <% end %>
 
 <%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
 <%= link_to 'Back', portfolios_path %>
