@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Oliver J Cook  3d Portfolio</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <h1> Oliver J Cook  3d Portfolio </h1>
+    <header>
+          <nav>
+
+            <a href="<%= pages_showreel_path %>">Showreel</a>
+            |
+            <a href="<%= pages_blog_path %>">Blog</a>
+            |
+            <a href="<%= pages_contact_path%>">Contact</a>
+          </nav>
+        </header>
+
+
+
+      <hr>
+
+
+    <%= yield %>
+    <hr>
+  <footer>
+      &copy;Oliver Cook 3d.com 2020
+    </footer>
+  </body>
+</html>

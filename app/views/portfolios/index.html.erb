@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1> Current Projects </h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Subtitle</th>
+
+      <th>Main image</th>
+
+      <th>Thumb image</th>
+      <th>Media</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @portfolios.each do |portfolio|%>
+
+        <p><%= portfolio.thumb_image %></p>
+        <p><%= portfolio.title %></p>
+        <p><% portfolio.subtitle %></p>
+        <p><% portfolio.content %></p>
+        <p><%= portfolio.main_image %>
+        <p><%= portfolio.media %></p>
+        <p><%= link_to 'Show', portfolio %></p>
+        <p><% link_to 'Edit', edit_portfolio_path(portfolio) %></p>
+        <p><% link_to 'Destroy', portfolio, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+
+    <% end %>
+
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Project', new_portfolio_path %>

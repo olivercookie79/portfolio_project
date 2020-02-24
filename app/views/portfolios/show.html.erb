@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @portfolio.title %>
+</p>
+
+<p>
+  <strong>Subtitle:</strong>
+  <%= @portfolio.subtitle %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @portfolio.content %>
+</p>
+
+<p>
+  <strong>Main image:</strong>
+  <%= @portfolio.main_image %>
+</p>
+
+<p>
+  <strong>Thumb image:</strong>
+  <%= @portfolio.thumb_image %>
+</p>
+
+<p>
+  <strong>Media:</strong>
+  <%= @portfolio.media %>
+</p>
+
+<%# <% if @portfolio.image.present? %>
+  <%# <%= image_tag @portfolio.image, alt: @planet.name, class: 'portfolios'  %>
+<%# <% end %> 
+
+<%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
+<%= link_to 'Back', portfolios_path %>
