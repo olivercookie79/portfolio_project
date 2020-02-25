@@ -13,17 +13,12 @@
 <p>
   <strong>Content:</strong>
   <%= @portfolio.content %>
-</p>
 
-
-
-
-<p>
   <strong>Media:</strong>
   <%= @portfolio.media %>
 </p>
 
-
+  <%= cl_image_tag(“Link goes here”) %>
   <%= image_tag @portfolio.main_image %>
 <%# <% end %>
 
