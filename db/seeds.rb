@@ -1,4 +1,4 @@
-
+Portfolio.destroy_all
 #Generate Portfolio
 
       Portfolio.create!(

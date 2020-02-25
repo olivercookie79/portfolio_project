@@ -5,13 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Subtitle</th>
 
-      <th>Main image</th>
-
-      <th>Thumb image</th>
-      <th>Media</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,6 +14,8 @@
     <% @portfolios.each do |portfolio|%>
 
         <div>
+
+
         <%= image_tag portfolio.thumb_image %>
         </div>
         <p><%= portfolio.title %></p>

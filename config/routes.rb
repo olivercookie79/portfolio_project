@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :portfolios
-
+  # root route
+  # '/' ==> root
+  root :to => "portfolios#index"
 
   get 'pages/showreel'
   get 'pages/contact'
