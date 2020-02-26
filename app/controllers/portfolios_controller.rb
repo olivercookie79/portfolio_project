@@ -10,7 +10,15 @@ class PortfoliosController < ApplicationController
   # GET /portfolios/1
   # GET /portfolios/1.json
   def show
+
+    # Cloudinary::Api.resources resource_type: 'raw', type: 'upload',  prefix: 't7'
+
+    # binding.pry
     @portfolio = Portfolio.find params[:id]
+    # @files = Cloudinary::Api.resources type: 'raw', prefix: 't7'
+    @files = Cloudinary::Api.resources resource_type: 'raw', type: 'upload',  prefix:  @portfolio.title
+    p @files
+
   end
 
   # GET /portfolios/new
@@ -25,7 +33,33 @@ class PortfoliosController < ApplicationController
   # POST /portfolios
   # POST /portfolios.json
   def create
+
+    # Cloudinary::Api.resources type: 'upload', prefix: 'testo'
+
     @portfolio = Portfolio.new(portfolio_params)
+
+    p params
+
+    # binding.pry
+
+    if params[:portfolio][:files].present?
+      folder = params[:portfolio][:title]
+      params[:portfolio][:files].each do |file|
+        req = Cloudinary::Uploader.upload(
+          file,
+          resource_type: 'raw',
+          unique_filename: false,
+          folder: folder,
+          use_filename: true,
+          tags: [ folder ]
+        )
+        # animal.image = req["public_id"]
+        puts "UPLOAD! ========================================", req['public_id']
+        p req
+      end
+      @portfolio.sketch = true  # this portfolio item DOES use a 3D sketch
+    end
+
 
     respond_to do |format|
       if @portfolio.save
@@ -66,10 +100,12 @@ class PortfoliosController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_portfolio
       @portfolio = Portfolio.find(params[:id])
-    end
+
+
+      end
 
     # Only allow a list of trusted parameters through.
     def portfolio_params
-      params.require(:portfolio).permit(:title, :subtitle, :content, :main_image, :thumb_image, :media)
+      params.require(:portfolio).permit(:title, :subtitle, :content, :main_image, :thumb_image, :files)
     end
 end

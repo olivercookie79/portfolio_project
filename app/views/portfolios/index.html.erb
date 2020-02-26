@@ -21,7 +21,9 @@
         <p><%= portfolio.title %></p>
         <p><% portfolio.subtitle %></p>
         <p><% portfolio.content %></p>
-        <p><%= portfolio.media %></p>
+      
+
+        <p><%= portfolio.sketch %></p>
         <p><%= link_to 'Show', portfolio %></p>
         <p><% link_to 'Edit', edit_portfolio_path(portfolio) %></p>
         <p><% link_to 'Destroy', portfolio, method: :delete, data: { confirm: 'Are you sure?' } %></p>

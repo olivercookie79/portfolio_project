@@ -1,4 +1,4 @@
-<%= form_with(model: portfolio, local: true) do |form| %>
+<%= form_with(model: portfolio, local: true, multipart: true) do |form| %>
   <% if portfolio.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(portfolio.errors.count, "error") %> prohibited this portfolio from being saved:</h2>
@@ -37,9 +37,11 @@
   </div>
 
   <div class="field">
-    <%= form.label :media %>
-    <%= form.text_area :media %>
+    <%= form.label :sketch, '3D Model data' %>
+    <%= form.file_field :files, multiple: true %>
   </div>
+
+​
 
   <div class="actions">
     <%= form.submit %>

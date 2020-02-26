@@ -6,7 +6,7 @@ class CreatePortfolios < ActiveRecord::Migration[5.2]
       t.text :content
       t.text :main_image
       t.text :thumb_image
-      t.text :media
+      t.boolean :sketch
 
       t.timestamps
     end

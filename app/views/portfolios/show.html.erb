@@ -1,3 +1,10 @@
+<% if @portfolio.sketch? %>
+  <script src="/js/three.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/main-lib.js"></script>
+<% end %>
+
+
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -14,11 +21,12 @@
   <strong>Content:</strong>
   <%= @portfolio.content %>
 
-  <strong>Media:</strong>
-  <%= @portfolio.media %>
+
 </p>
 
-  <%= cl_image_tag(“Link goes here”) %>
+
+
+
   <%= image_tag @portfolio.main_image %>
 <%# <% end %>
 

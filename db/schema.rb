@@ -15,20 +15,6 @@ ActiveRecord::Schema.define(version: 2020_02_23_102637) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "blogs", force: :cascade do |t|
-    t.string "title"
-    t.text "body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "contacts", force: :cascade do |t|
-    t.string "title"
-    t.text "body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "pages", force: :cascade do |t|
     t.string "title"
     t.datetime "created_at", null: false
@@ -41,14 +27,7 @@ ActiveRecord::Schema.define(version: 2020_02_23_102637) do
     t.text "content"
     t.text "main_image"
     t.text "thumb_image"
-    t.text "media"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "showreels", force: :cascade do |t|
-    t.string "title"
-    t.text "notes"
+    t.boolean "sketch"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
