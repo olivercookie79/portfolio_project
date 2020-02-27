@@ -1,8 +1,3 @@
-<% if @portfolio.sketch? %>
-  <script src="/js/three.js"></script>
-  <script src="/js/main.js"></script>
-  <script src="/js/main-lib.js"></script>
-<% end %>
 
 
 <p id="notice"><%= notice %></p>
@@ -22,7 +17,22 @@
   <%= @portfolio.content %>
 
 
+
+
 </p>
+
+<div  id = "output" style = "width: 700px; height: 350px;"></div>
+
+<% if @portfolio.sketch? %>
+<script src="/js/three.js"></script>
+<script src="/js/orbitControls.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/main-lib.js"></script>
+<script src="/js/GLTFLoader.js"></script>
+
+
+
+<% end %>
 
 
 

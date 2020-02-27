@@ -1,3 +1,4 @@
+
 // If the app variable already exists, then reuse it,
 // otherwise initialise it to an empty object
 // (only works for 'var' because of 'hoisting', google it)
@@ -13,9 +14,7 @@ app.init = () => {
 
   console.log('Hello my 3D W0rld!');
 
-  app.gui = new dat.GUI();
-  app.gui.add( app.controls, 'rotationSpeed', 0, 1 );
-  app.gui.add( app.controls, 'bouncingSpeed', 0, 2 );
+
 
 
   // The scene stores and keeps track of all the objects we're creating,
@@ -32,23 +31,24 @@ app.init = () => {
 
   // Where exactly is the camera in the scene?
   app.camera.position.x = -30;
-  app.camera.position.y = 40;
+  app.camera.position.y = 10;
   app.camera.position.z = 30;
   // app.camera.position.set( -30, 40, 30 );
 
-  app.camera.lookAt( app.scene.position ) // Look at the origin: x=0, y=0, z=0
-
+  app.camera.lookAt( app.scene.position ); // Look at the origin: x=0, y=10, z=0
+  app.renderer = new THREE.WebGLRenderer(); // use hardware acceleration of gfx card!
+  var output = document.getElementById('output');
+  output.appendChild( app.renderer.domElement );
+  app.camera.aspect = output.clientWidth / output.clientHeight;
   // The renderer calculates how to draw all the objects in the scene,
   // based on the lighting and the camera perspective, and renders
   // it all down to a 2D image to show in a <canvas> browser tag
-  app.renderer = new THREE.WebGLRenderer(); // use hardware acceleration of gfx card!
-  app.renderer.setSize( window.innerWidth, window.innerHeight );
+  app.renderer.setSize( output.clientWidth, output.clientHeight );
   app.renderer.setClearColor( 0x000000 );  // background colour
 
   app.renderer.shadowMap.enabled = true;  // shadows are computationally expensive, and thus disabled by default
   app.renderer.shadowMap.type = THREE.PCFSoftShadowMap; // WTF??
 
-  document.getElementById('output').appendChild( app.renderer.domElement );
 
   // app.axes = new THREE.AxesHelper( 40 );
   // app.scene.add( app.axes );
@@ -57,8 +57,8 @@ app.init = () => {
   app.plane = app.createPlane();
   app.scene.add( app.plane );
 
-  app.cube = app.createCube();
-  app.scene.add( app.cube );
+  // app.cube = app.createCube();
+  // app.scene.add( app.cube );
 
   // app.sphere = app.createSphere();
   // app.scene.add( app.sphere );
@@ -77,7 +77,7 @@ app.init = () => {
     app.renderer.domElement
   );
 
-  app.meshGeo = app.importGLTF();
+app.importGLTF();
 
 
 
@@ -103,7 +103,7 @@ app.animate = () => {
   // app.sphere.position.x = 20 + ( Math.cos(app.controls.step) * 30 );
 
   // app.cube.rotation.x += app.controls.rotationSpeed;
-  app.cube.rotation.y +=
+  // app.cube.rotation.y +=
   app.controls.rotationSpeed;
 
   app.renderer.render( app.scene, app.camera );

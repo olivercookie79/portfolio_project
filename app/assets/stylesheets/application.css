@@ -5,6 +5,8 @@
 
 
 body {
+  align-items: center;
+
   background-color: #595959;
   color: white;
   font-family: Helvetica, sans-serif;
