@@ -63,12 +63,15 @@ app.init = () => {
   // app.sphere = app.createSphere();
   // app.scene.add( app.sphere );
 
+  app.cylinder = app.createCylinder();
+  app.scene.add( app.cylinder );
+
 
   // Let there be light!
   app.spotlight = app.createSpotlight();
   app.scene.add( app.spotlight );
 
-  app.ambient = new THREE.AmbientLight( 0x774444 );
+  app.ambient = new THREE.AmbientLight( 0x9FC5E8 );
   app.scene.add( app.ambient );
 
   // Control camera position and zoom using the mouse

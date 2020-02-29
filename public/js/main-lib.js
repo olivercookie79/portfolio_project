@@ -21,6 +21,41 @@ app.createPlane = () => {
 }; // createPlane()
 
 
+
+
+app.createCylinder = () => {
+
+  const cylinderGeometry = new THREE.CylinderGeometry( 100, 100 );
+  const cylinderMaterial = new THREE.MeshLambertMaterial({
+    color: 0x666666
+  });
+
+  // Combine the geometry (shape) and the material (what
+  // the surface looks like) into a mesh, the actual
+  // 3D object
+  const cylinder = new THREE.Mesh( cylinderGeometry, cylinderMaterial);
+
+  cylinder.position.set( 0, -19, 0 );
+  cylinder.scale.set( .4, .4, .4 );
+  // cylinde.radial.Segments(20);
+  // cylinder.rotation.x = -0.5 * Math.PI;  // because of math(s)
+  cylinder.receiveShadow = true; // shadows are cast onto this
+
+  return cylinder;
+
+}; // createPlane()
+
+
+
+
+
+
+
+
+
+
+
+
 app.createSpotlight = () => {
 
   const spotlight = new THREE.SpotLight( 0xFFFFFF );
