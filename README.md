@@ -19,7 +19,7 @@ https://porfolio-final.herokuapp.com/
 
 ## Introduction : Goals and MVP
 
-#### Purpose of the Project :
+### Purpose of the Project :
 
 The Primary Purpose of the  project was to create a Portfolio Website to showcase 3d Art, that could be maintained persistently  with updates as new works are completed.
 
@@ -27,24 +27,24 @@ The Primary Purpose of the  project was to create a Portfolio Website to showcas
 
 The other purpose of the project is to be able to showcase 3d Art integrated in real time  using the power  of Three.JS.  Using Cloudinary to host the 3D files (as well as 2D files)  proved to be very  impressive as the final result enables the upload of 3D Models which can be displayed  instantly with no loading time, directly onto the website.
 
-##### Using Cloudinary
+### Using Cloudinary
 Setting up Cloudinary was relatively straight  forward  as I used the  credentials from a previous exercise. For the images, they were uploaded and the path added to the seeds file.
 Later will need to reload so  they can all be uploaded  directly through the site.
 Adding a 3D asset proved more complex and I had assistance form Luke as this proved  a bit challenging. However this was possible and the result csan be seen by looking at the Portfolios controller.   
 
-##### Limitations of Cloudinary  Uploads
+### Limitations of Cloudinary  Uploads
 10 MB Upload Limit with a free account.  Some 3d Models can be large and for the sample model I chose it was a case of reducing the poly count
 
 This meant the uploads had to be under 10mb, so the 3D  file had to be optimised to be under that limit.
 
-##### Basic Minimal Viable Product (Phase 0)
+### Basic Minimal Viable Product (Phase 0)
 The MVP for the project was : A ‘Portfolio’ (main) page that  hosts thumbnails of latest models this was a Model, Controller and View)
 
 Clicking on the thumbnail Image would take you to the main page  of the associated project. (Portfolios/id  route)
 
 Model ‘Pages‘ to hold Showreel Page, Contacts Page and Blog.
 
-##### Building from the Back End: Using Rails to build the Site.
+### Building from the Back End: Using Rails to build the Site.
 
 Initial creation  using Rails to set up the Database.
 
@@ -53,7 +53,7 @@ This was done using Scaffolds, 2 mains models were created:
 Pages: which has many for the  Showreel, Contact and Blog Pages and Forms
 
 
-##### The Three.JS Pipeline
+### The Three.JS Pipeline
 
 
 Originally, Objs  (Wave Front OBjs) were tested to export for use in Three.js . , this had some success but would not load correctly and took up too much space. Also Tarag image files (TGA)  were used for textures, but these are not native  to three.js, and are  “expensive” due to their high (16 bit) depth.  Also the original 3D model I decided to use was to large for Cloudinary, so had  to be reduced in terms of poly-count.
@@ -65,11 +65,11 @@ GLTF Binary (GLB) turned out to be the best format to use,  GLTF is  the preferr
 I used a very good  OBJ converter I found on the Web that  could convert  to GLTF but... one problem remained: with GLTF, you need to also export the texture as  as  a separate file along with  a  .bin file, and Cloudinary did not accept .bin files! So I was back to square one again…  but  I  GLB is a binary version of GLTF and did not require  a bin, also the texture file could be embedded as a PNG. This worked perfectly and I finally had  the 3d File displayed on the website!
 
 
-#### To Do List  
+### To Do List  
 
 Still alot remains to be done to get the site to the  state it needs to be in, but basic MVP and functionality is in place:
 
-###### *Top Priority  Features for Phase 1 completeness:*
+#### *Top Priority  Features for Phase 1 completeness:*
 
 
 * Set up Admin Log-In to enable uploads of new works
@@ -92,7 +92,7 @@ Still alot remains to be done to get the site to the  state it needs to be in, b
 
 * Add a new front Greeting page with a 3D Model on it in an interactive turntable.
 
-#### Conclusion:
+### Conclusion:
 
 I really wanted to get more styling completed but some time was spent figuring out the  3D Pipeline for using Three.JS and finding the best  format to use for 3d Model exports.
 
@@ -105,4 +105,4 @@ I am also looking forward to using three.js more and using it for other passion 
 
 In terms of RAILS, I really like RAILS and enjoy  using to build out the basic framework, although scaffolding is very easy convenient and  time saving, it does almost too much and seems too  “magical”. I prefer to build the Routes and Models  without Scaffolding, especially as this improves understanding of how bac k end frameworks  work.
 
-#### *Exciting things lie ahead! Stay Tuned!*
+### *Exciting things lie ahead! Stay Tuned!*

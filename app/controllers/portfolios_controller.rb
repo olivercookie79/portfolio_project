@@ -51,12 +51,14 @@ class PortfoliosController < ApplicationController
           unique_filename: false,
           folder: folder,
           use_filename: true,
-          tags: [ folder ]
+          tags: [ folder ],
+          
         )
-        # animal.image = req["public_id"]
+
         puts "UPLOAD! ========================================", req['public_id']
         p req
       end
+
       @portfolio.sketch = true  # this portfolio item DOES use a 3D sketch
     end
 
