@@ -1,15 +1,15 @@
 ## READ ME
 
-##  Sei35 2019/20 Final Project  				Oliver Cook
+##  Sei35 2019/20 FINAL PROJECT  				Oliver Cook
 
 
-#### Portfolio Project - READ ME  v.01
+## Portfolio Project - READ ME  v.01
 
-#### Running the site:
+### Running the site:
 
-Currently Heroku version is broken but this is being fixed. To run the rails version locally, download the rails project from Git Hub.
+####  IMPORTANT! Currently Heroku version is broken but this is being fixed. To run the rails version locally, download the rails project from Git Hub.
 
-Link:  
+#### Links:  
 https://github.com/olivercookie79/portfolio_project
 
 Heroku version:
