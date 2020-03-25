@@ -11,29 +11,38 @@
   </thead>
 
   <tbody>
+
+    <div id = "gridthumbs">
+
     <% @portfolios.each do |portfolio|%>
 
-        <div>
-
-        <%= image_tag portfolio.thumb_image %>
-        </div>
-
-
-        <p><%= portfolio.title %></p>
-        <p><%  portfolio.subtitle %></p>
-        <p><%  portfolio.content %></p>
 
 
 
-      <% if portfolio.sketch? %>
-        
-        <p><%= link_to 'Show', portfolio %></p>
+    <%= image_tag portfolio.thumb_image %>
+
+
+
+        <p><%portfolio.title %></p>
+        <p><%link_to 'Show', portfolio %> </p>
+        <p><%portfolio.subtitle %></p>
+        <p><%portfolio.content %></p>
+
+
+
+      <% if portfolio.sketch %>
+
+    </div>
+        <p><% link_to 'Show', portfolio %></p>
         <p><% link_to 'Edit', edit_portfolio_path(portfolio) %></p>
         <p><% link_to 'Destroy', portfolio, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+
+
       <% end %>
     <% end %>
 
   </tbody>
+
 </table>
 
 <br>

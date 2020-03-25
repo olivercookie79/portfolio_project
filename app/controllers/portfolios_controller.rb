@@ -5,6 +5,10 @@ class PortfoliosController < ApplicationController
   # GET /portfolios.json
   def index
     @portfolios = Portfolio.all
+
+    puts "==============================="
+    puts @portfolios.inspect
+
   end
 
   # GET /portfolios/1
@@ -52,7 +56,7 @@ class PortfoliosController < ApplicationController
           folder: folder,
           use_filename: true,
           tags: [ folder ],
-          
+
         )
 
         puts "UPLOAD! ========================================", req['public_id']
