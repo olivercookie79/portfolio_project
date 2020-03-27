@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<h1> Current Projects </h1>
+<h1> Character  Projects </h1>
+<h2> recent Character Projects </h2>
 
 <table>
   <thead>
@@ -19,20 +20,29 @@
 
 
 
-    <%= image_tag portfolio.thumb_image %>
+    <% image_tag portfolio.thumb_image %>
 
 
 
         <p><%portfolio.title %></p>
-        <p><%link_to 'Show', portfolio %> </p>
+        <%link_to 'Show', portfolio %>
+
+        <%= link_to portfolio_path(portfolio) do %>
+            <%= image_tag portfolio.thumb_image %>
+        <% end %>
+
+
+
+
         <p><%portfolio.subtitle %></p>
         <p><%portfolio.content %></p>
 
 
-
-      <% if portfolio.sketch %>
+        <% if portfolio.sketch %>
 
     </div>
+
+
         <p><% link_to 'Show', portfolio %></p>
         <p><% link_to 'Edit', edit_portfolio_path(portfolio) %></p>
         <p><% link_to 'Destroy', portfolio, method: :delete, data: { confirm: 'Are you sure?' } %></p>

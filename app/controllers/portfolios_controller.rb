@@ -5,6 +5,7 @@ class PortfoliosController < ApplicationController
   # GET /portfolios.json
   def index
     @portfolios = Portfolio.all
+    @page_title = "Portfolio"
 
     puts "==============================="
     puts @portfolios.inspect

@@ -21,6 +21,20 @@ Portfolio.destroy_all
 
 
       Portfolio.create!(
+      title: "Cyber Guy",
+      subtitle: "3D Artwork",
+      content: "Created In Zbrush, Maya, rendered in Redshift.",
+      main_image: "https://res.cloudinary.com/haxxor70/image/upload/v1585273852/3dPortfolio/CybG_main_iuzoxd.jpg",
+      thumb_image: "https://res.cloudinary.com/haxxor70/image/upload/v1585273852/3dPortfolio/CybG_thumb_ue39uw.jpg")
+
+      Portfolio.create!(
+      title: "Sphynx Cat",
+      subtitle: "3D Artwork",
+      content: "Created In Zbrush, Maya, rendered in Redshift.",
+      main_image: "https://res.cloudinary.com/haxxor70/image/upload/v1585273852/3dPortfolio/Sphynx_Cat_main_lpd97e.jpg",
+      thumb_image: "https://res.cloudinary.com/haxxor70/image/upload/v1585273852/3dPortfolio/Sphynx_Cat_THUMB_osowne.jpg")
+
+      Portfolio.create!(
       title: "Captain Jennings",
       subtitle: "3D Artwork",
       content: "Created In Zbrush, Maya, rendered in Arnold.",

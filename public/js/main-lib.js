@@ -100,7 +100,7 @@ app.createCube = () => {
 //Model Loader
 
 app.importGLTF = () => {
-  const file = 'https://res.cloudinary.com/haxxor70/raw/upload/v1582790843/Demon%20%20GLB/demon5.glb';
+  const file = 'https://res.cloudinary.com/haxxor70/raw/upload/v1582790843/Demon%20%20GLB /demon5.glb';
   new THREE.GLTFLoader().load(file, function ( gltf ) {
   	// called when the resource is loaded
     app.scene.add( gltf.scene );
