@@ -1,70 +1,149 @@
-
-
-
-
-
-
 body {
+  padding-left: 1px;
   align-items: center;
-
-  background-color: #595959;
+  background-color: #29303b;
   color: white;
   font-family: 'Orbitron', sans-serif;
 
 }
 
-
-
-
-
-
-
 header {
-
-  text-align: left;
+  display:block;
+  text-align: right;
   font-family:'Meera Inimai', sans-serif;
-  font-size: 21px;
-
+  text-emphasis-color: white;
+  word-spacing: 20px;
+  font-size: 15px;
+  background-color:#2a2c3c;
+  padding-right: 112px;
+  padding-top: 12px;
 
 
 }
 
 
 
-#gridthumbs{
+
+
+h1{
+    text-align: center;
+    text-shadow:5px 5px  #181818;
+    font-size: 20px;
+    padding-bottom: 20px;
+
+}
+
+
+
+.name {
+    text-align: left;
+    padding-left: 125px;
+    font-size: 55px;
+    word-spacing: 8px;
+    font-family: 'Orbitron', sans-serif;
+
+
+}
+.container{
+      margin: auto;
+      width: 100%;
+      padding: 5px;
+  }
+
+
+.gridthumbs{
+      overflow: hidden;
       display: flex;
+      margin: auto;
       flex-direction: row;
       flex-wrap: wrap;
-      align-content: space-between;
-      /* padding: em; */
-
-
+      align-items: center;
+      justify-content: center;
+      width: 100%;
       }
 
 
+hr{
+  color: red;
+  background-color: red;
+
+}
+
+.top{
+      font-size: 35px;
+      text-align: center;
+
+    }
 
 
 
+.main_image{
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 3px dark grey;
+    padding: 5px;
+
+}
 
 
+li {
+  display: inline;
+
+}
+
+a:link {
+  text-decoration: none;
+  text-decoration-color: white;
+
+}
+
+a:visited {
+  color: grey;
+  text-decoration-color: white;
+
+}
+
+a:hover {
+
+  color: white;
+
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+a:active {
+  text-decoration: underline;
+  text-decoration-color: green;
 
 
+}
 
 
+footer{
+
+  background-color: #1b1c1a;
+  height: 30px;
+
+}
 
 
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+.hr2{
+  margin-left: 120px;
+  margin-right: 120px;
+
+
+}
+h3{
+
+  text-align: left;
+  padding-left: 125px;
+  font-size: 18px;
+  word-spacing: 2px;
+  font-family: 'Orbitron', sans-serif;
+
+}

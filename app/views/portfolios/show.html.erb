@@ -1,5 +1,3 @@
-
-
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -8,12 +6,12 @@
 </p>
 
 <p>
-  <strong>Subtitle:</strong>
+  <strong></strong>
   <%= @portfolio.subtitle %>
 </p>
 
 <p>
-  <strong>Content:</strong>
+  <strong></strong>
   <%= @portfolio.content %>
 
 
@@ -21,9 +19,9 @@
 
 </p>
 
+<% if @portfolio.sketch? %>
 <div  id = "output" style = "width: 700px; height: 350px;"></div>
 
-<% if @portfolio.sketch? %>
 <script src="/js/three.js"></script>
 <script src="/js/orbitControls.js"></script>
 <script src="/js/main.js"></script>
@@ -36,11 +34,12 @@
 
 
 
-
+<div class = "main_image" >
   <%= image_tag @portfolio.main_image %>
 
-  
+</div>
+
 <%# <% end %>
 
-<%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
+<% link_to 'Edit', edit_portfolio_path(@portfolio) %> |
 <%= link_to 'Back', portfolios_path %>
