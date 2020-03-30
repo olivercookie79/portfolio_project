@@ -19,7 +19,7 @@ Portfolio.destroy_all
       content: "Created In Zbrush, Maya, rendered in Arnold.",
       main_image: "https://res.cloudinary.com/haxxor70/image/upload/c_scale,w_850/v1582520309/3dPortfolio/astronaut_front_urjw1z.jpg",
       thumb_image: "https://res.cloudinary.com/haxxor70/image/upload/c_scale,h_300/v1582514747/3dPortfolio/astronaught_thumbnail_wxkcar.jpg")
-    
+
 
 
 
@@ -57,7 +57,7 @@ Portfolio.destroy_all
       Portfolio.create!(
       title: "Ilia",
       subtitle: "3D Artwork",
-      content: "He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.",
+      content: "hmmmmm......",
       main_image: "https://res.cloudinary.com/haxxor70/image/upload/c_scale,w_850/v1582520522/3dPortfolio/ilia_front_y7t3sf.jpg",
       thumb_image: "https://res.cloudinary.com/haxxor70/image/upload/c_scale,h_300/v1582518720/3dPortfolio/ilia_thumnail_mlxc7d.jpg")
 

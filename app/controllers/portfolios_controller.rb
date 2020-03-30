@@ -12,8 +12,7 @@ class PortfoliosController < ApplicationController
 
   end
 
-  # GET /portfolios/1
-  # GET /portfolios/1.json
+
   def show
 
     # Cloudinary::Api.resources resource_type: 'raw', type: 'upload',  prefix: 't7'
@@ -59,11 +58,12 @@ class PortfoliosController < ApplicationController
           tags: [ folder ],
 
         )
-
         puts "UPLOAD! ========================================", req['public_id']
         p req
       end
 
+
+def sketch
       @portfolio.sketch = true  # this portfolio item DOES use a 3D sketch
     end
 
@@ -115,4 +115,5 @@ class PortfoliosController < ApplicationController
     def portfolio_params
       params.require(:portfolio).permit(:title, :subtitle, :content, :main_image, :thumb_image, :files, :sketch )
     end
+end
 end
