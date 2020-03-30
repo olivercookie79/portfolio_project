@@ -12,12 +12,15 @@ Portfolio.destroy_all
 
 
 
+
       Portfolio.create!(
       title: "Commander of the Lost Expedition",
       subtitle: "3D Artwork",
       content: "Created In Zbrush, Maya, rendered in Arnold.",
       main_image: "https://res.cloudinary.com/haxxor70/image/upload/c_scale,w_850/v1582520309/3dPortfolio/astronaut_front_urjw1z.jpg",
       thumb_image: "https://res.cloudinary.com/haxxor70/image/upload/c_scale,h_300/v1582514747/3dPortfolio/astronaught_thumbnail_wxkcar.jpg")
+    
+
 
 
       Portfolio.create!(
@@ -40,6 +43,7 @@ Portfolio.destroy_all
       content: "Created In Zbrush, Maya, rendered in Arnold.",
       main_image: "https://res.cloudinary.com/haxxor70/image/upload/c_scale,w_850/v1582517932/3dPortfolio/oliver-cook-final-senior-minion_b1mfsk.jpg",
       thumb_image: "https://res.cloudinary.com/haxxor70/image/upload/c_scale,h_300/v1582518669/3dPortfolio/senior-minion_thumbnail_me31is.jpg")
+
 
 
       Portfolio.create!(
