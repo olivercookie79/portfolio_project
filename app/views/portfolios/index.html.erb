@@ -38,15 +38,10 @@
 
         <% end %>
 
-        <% if portfolio.sketch %>
 
 
 
-
-
-
-
-        <p><strong> <%= link_to 'Show', portfolio %></strong></p>
+        <p><strong> <% link_to 'Show', portfolio %></strong></p>
         <p><% link_to 'Edit', edit_portfolio_path(portfolio) %></p>
         <p><% link_to 'Destroy', portfolio, method: :delete, data: { confirm: 'Are you sure?' } %></p>
 
@@ -54,7 +49,7 @@
         </div>
       </div>
       <% end %>
-    <% end %>
+
 
   </tbody>
 

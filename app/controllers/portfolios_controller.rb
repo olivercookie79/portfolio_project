@@ -63,7 +63,7 @@ class PortfoliosController < ApplicationController
       end
 
 
-def sketch
+
       @portfolio.sketch = true  # this portfolio item DOES use a 3D sketch
     end
 
@@ -115,5 +115,4 @@ def sketch
     def portfolio_params
       params.require(:portfolio).permit(:title, :subtitle, :content, :main_image, :thumb_image, :files, :sketch )
     end
-end
 end
