@@ -15,8 +15,8 @@
 
   <tbody>
 
-<div  class = "container">
-    <div class ="gridthumbs">
+  <div  class = "container">
+  <div class ="gridthumbs">
     <% @portfolios.each do |portfolio|%>
 
 
@@ -33,21 +33,20 @@
             <%= image_tag portfolio.thumb_image %>
 
 
-
+            <p><%portfolio.subtitle %></p>
+            <p><%portfolio.content %></p>
 
         <% end %>
 
 
 
 
-        <p><%portfolio.subtitle %></p>
-        <p><%portfolio.content %></p>
 
-    <% if portfolio.sketch %>
+        <% if portfolio.sketch %>
 
 
 
-        <p><% link_to 'Show', portfolio %></p>
+        <p><strong> <%= link_to 'Show', portfolio %></strong></p>
         <p><% link_to 'Edit', edit_portfolio_path(portfolio) %></p>
         <p><% link_to 'Destroy', portfolio, method: :delete, data: { confirm: 'Are you sure?' } %></p>
 

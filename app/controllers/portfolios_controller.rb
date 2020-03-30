@@ -7,7 +7,7 @@ class PortfoliosController < ApplicationController
     @portfolios = Portfolio.all
     @page_title = "Portfolio"
 
-    puts "==============================="
+
     puts @portfolios.inspect
 
   end
@@ -113,6 +113,6 @@ class PortfoliosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def portfolio_params
-      params.require(:portfolio).permit(:title, :subtitle, :content, :main_image, :thumb_image, :files)
+      params.require(:portfolio).permit(:title, :subtitle, :content, :main_image, :thumb_image, :files, :sketch)
     end
 end
