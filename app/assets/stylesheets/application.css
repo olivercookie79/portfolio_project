@@ -10,27 +10,31 @@ body {
 header {
   display:block;
   text-align: right;
-  font-family:'Meera Inimai', sans-serif;
+  font-family: 'Tomorrow', sans-serif;
   text-emphasis-color: white;
   word-spacing: 20px;
   font-size: 15px;
   background-color:#2a2c3c;
   padding-right: 112px;
   padding-top: 12px;
+}
 
+
+.barcode {
+  text-align: left;
+  font-size: 60px;
+  font-family: 'Libre Barcode 128', cursive;
+  word-spacing: 20px;
+  padding-left: 125px;
 
 }
 
 
-
-
-
 h1{
-    text-align: center;
-    text-shadow:5px 5px  #181818;
+    text-align:left;
     font-size: 20px;
-    padding-bottom: 20px;
-
+    padding-bottom: 18px;
+    padding-left: 125px;
 }
 
 
@@ -40,6 +44,7 @@ h1{
     padding-left: 125px;
     font-size: 55px;
     word-spacing: 8px;
+    overflow: hidden;
     font-family: 'Orbitron', sans-serif;
 
 
@@ -52,6 +57,7 @@ h1{
 
 
 .gridthumbs{
+
       overflow: hidden;
       display: flex;
       margin: auto;
@@ -59,13 +65,15 @@ h1{
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      width: 100%;
+
       }
 
 
-hr{
-  color: red;
-  background-color: red;
+.hr{
+
+  margin-left: 120px;
+  margin-right: 109px;
+
 
 }
 
@@ -77,7 +85,7 @@ hr{
 
 
 
-.main_image{
+.main_image {
     overflow: auto;
     display: flex;
     flex-direction: column;
@@ -89,6 +97,8 @@ hr{
     padding: 5px;
 
 }
+
+
 
 
 li {
@@ -125,9 +135,11 @@ a:active {
 
 
 footer{
+  margin-left: 120px;
+  margin-right: 120px;
+  background-color: #29303b;
+  media:
 
-  background-color: #1b1c1a;
-  height: 30px;
 
 }
 
@@ -147,3 +159,42 @@ h3{
   font-family: 'Orbitron', sans-serif;
 
 }
+
+
+.pagestxt{
+  text-align: left;
+  padding-left: 125px;
+  margin-right: 120px;
+  font-size: 18px;
+  font-family: 'Tomorrow', sans-serif;
+}
+
+.shreel{
+
+    width: 84%;
+    height: auto;
+    display: flex;
+    margin: auto;
+
+    object-fit: cover;
+}
+
+
+  .contact{
+    display: inline-block;
+    content: inherit;
+    text-align: justify;
+    padding-left: 125px;
+    font-family: 'Tomorrow', sans-serif;
+
+}
+
+
+.icons{
+
+    display: flex;
+    justify-content:space-between;
+    padding-left: 982px;
+
+}
+  /* display: flex; */

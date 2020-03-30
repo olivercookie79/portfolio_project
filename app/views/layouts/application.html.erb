@@ -6,6 +6,12 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application','https://fonts.googleapis.com/css?family=Orbitron:400,800&display=swap', media: 'all' %>
+    <%= stylesheet_link_tag 'application','https://fonts.googleapis.com/css?family=Nova+Flat&display=swap' , media: 'all' %>
+
+    <%= stylesheet_link_tag 'application','https://fonts.googleapis.com/css?family=Tomorrow&display=swap', media: 'all' %>
+
+    <%= stylesheet_link_tag 'application','https://fonts.googleapis.com/css?family=Libre+Barcode+128&display=swap' ,media: 'all' %>
+
     <%= javascript_include_tag 'application' %>
     <script src = "/js/jquery-3.4.1.js"/>
     <%= cloudinary_js_config %>
@@ -16,46 +22,70 @@
   </head>
 
   <body>
+<div>
     <header>
-
 
 
 
           <nav>
 
+
             <ul>
-              <li><a href="<%= portfolios_path %>">PORTFOLIO</a></li>
+
+
+
+            <li><a href="<%= portfolios_path %>">PORTFOLIO</a></li>
 
               <li><a href="<%= pages_showreel_path %>">SHOWREEL</a></li>
 
               <li><a href="<%= pages_blog_path %>">BLOG</a></li>
 
               <li><a href="<%= pages_contact_path%>">CONTACT</a></li>
+
             </ul>
-<br>
-            <div class = "name" >
-            OLIVER COOK
-            </div>
-
-          <h3>  3d Artist </h3>
-
-<br>
+            <div class =  "name" > Oliver Cook  </div>
 
 
-          </nav>
-        </header>
-<div  class = "hr2" >
-        <hr>
 </div>
 
 
 
 
+            <h3>  Web Developer |  3d Artist </h3>
 
-    <%= yield %>
+
+
+
+          </nav>
+        </header>
+
+<div  class = "hr2" >
+        <hr>
+</div>
+
+
+  <%= yield %>
+<div  class = "hr" >
     <hr>
+    </div>
+
   <footer>
       &copy; Oliver Cook 3d.com 2020
+ <i   class = "icons"     >
+  <li><%= link_to image_tag('instagram-1-32.png'), root_path, class:'https://www.facebook.com'  %></li>
+
+
+      <span><li><%= link_to image_tag('artstationcopy.png'), 'https://www.artstation.com/ojcook' %></li></span>
+
+      <span> <li><%= link_to image_tag('linkedin-1-32.png'), 'https://www.linkedin.com/in/oliver-cook-3284313/'%></li>  <span class = "stretch"></span>
+</i>
+
+
+
+
     </footer>
+    <br>
+    <br>
+
   </body>
 </html>
