@@ -14,10 +14,12 @@
   </thead>
 
   <tbody>
+    <div  class = "container">
 
-  <div  class = "container">
-  <div class ="gridthumbs">
+      <div class ="gridthumbs">
     <% @portfolios.each do |portfolio|%>
+
+
 
 
 
@@ -46,9 +48,9 @@
         <p><% link_to 'Destroy', portfolio, method: :delete, data: { confirm: 'Are you sure?' } %></p>
 
 
-        </div>
-      </div>
       <% end %>
+    </div>
+    </div>
 
 
   </tbody>

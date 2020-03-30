@@ -49,22 +49,23 @@ h1{
 
 
 }
-.container{
+container{
+  display: inline;
+
       margin: auto;
       width: 100%;
-      padding: 5px;
+      padding: 2px;
   }
 
 
 .gridthumbs{
-
-      overflow: hidden;
       display: flex;
-      margin: auto;
       flex-direction: row;
       flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
+      margin: center;
+
+
+      justify-content:center;
 
       }
 
@@ -147,6 +148,7 @@ footer{
 .hr2{
   margin-left: 120px;
   margin-right: 120px;
+  justify-content: center;
 
 
 }
@@ -157,6 +159,7 @@ h3{
   font-size: 18px;
   word-spacing: 2px;
   font-family: 'Orbitron', sans-serif;
+  justify-content: center;
 
 }
 
