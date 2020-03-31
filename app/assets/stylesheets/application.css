@@ -14,7 +14,7 @@ header {
   text-emphasis-color: white;
   word-spacing: 20px;
   font-size: 15px;
-  background-color:#2a2c3c;
+  background-color:#29303b;
   padding-right: 112px;
   padding-top: 12px;
 }
@@ -51,10 +51,9 @@ h1{
 }
 container{
   display: inline;
-
-      margin: auto;
-      width: 100%;
-      padding: 2px;
+  margin: auto;
+  width: 100%;
+  padding: 2px;
   }
 
 
@@ -63,17 +62,18 @@ container{
       flex-direction: row;
       flex-wrap: wrap;
       margin: center;
-
-
       justify-content:center;
 
       }
 
 
 .hr{
+  width:84%;
+  justify-content: center;
+  margin-left: auto;
+   margin-right: auto;
 
-  margin-left: 120px;
-  margin-right: 109px;
+
 
 
 }
@@ -146,30 +146,30 @@ footer{
 
 
 .hr2{
-  margin-left: 120px;
-  margin-right: 120px;
+  width:84%;
   justify-content: center;
-
+  margin-left: auto;
+   margin-right: auto;
 
 }
 h3{
 
-  text-align: left;
-  padding-left: 125px;
-  font-size: 18px;
-  word-spacing: 2px;
-  font-family: 'Orbitron', sans-serif;
-  justify-content: center;
+    text-align: left;
+    padding-left: 125px;
+    font-size: 18px;
+    word-spacing: 2px;
+    font-family: 'Orbitron', sans-serif;
+    justify-content: center;
 
 }
 
 
 .pagestxt{
-  text-align: left;
-  padding-left: 125px;
-  margin-right: 120px;
-  font-size: 18px;
-  font-family: 'Tomorrow', sans-serif;
+    text-align: left;
+    padding-left: 125px;
+    margin-right: 120px;
+    font-size: 18px;
+    font-family: 'Tomorrow', sans-serif;
 }
 
 .shreel{
@@ -195,8 +195,9 @@ h3{
 
 .icons{
 
-    display: flex;
-    justify-content:space-between;
-    padding-left: 982px;
+    display: inline;
+    margin-left: 1050px;
+    word-spacing: 12px;
+
 
 }
