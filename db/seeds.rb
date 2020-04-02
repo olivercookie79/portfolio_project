@@ -51,8 +51,8 @@ Portfolio.destroy_all
       subtitle: "Awesome Artwork",
       content: "Created In Zbrush, Maya, rendered in Arnold.",
       main_image: "https://res.cloudinary.com/haxxor70/image/upload/c_scale,w_850/v1582520614/3dPortfolio/oliver-cook-hell-baron-01b_g1kdf7.jpg",
-      thumb_image: "https://res.cloudinary.com/haxxor70/image/upload/c_scale,h_300/v1582519304/3dPortfolio/hell-baron_thumbnail_350_hg7sth.jpg",
-      
+      thumb_image: "https://res.cloudinary.com/haxxor70/image/upload/c_scale,h_300/v1582519304/3dPortfolio/hell-baron_thumbnail_350_hg7sth.jpg")
+
 
       Portfolio.create!(
       title: "Ilia",
