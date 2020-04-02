@@ -20,6 +20,19 @@ header {
 }
 
 
+
+#output{
+
+position:absolute;
+width: 360px;
+height: 300px;
+margin: center;
+z-index: -1
+
+
+}
+
+
 .barcode {
   text-align: left;
   font-size: 60px;
@@ -49,8 +62,8 @@ h1{
 
 
 }
-container{
-  display: inline;
+.container{
+  display: block;
   margin: auto;
   width: 100%;
   padding: 2px;
@@ -63,6 +76,8 @@ container{
       flex-wrap: wrap;
       margin: center;
       justify-content:center;
+      opacity:
+
 
       }
 
