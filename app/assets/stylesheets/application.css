@@ -76,7 +76,7 @@ h1{
       flex-wrap: wrap;
       margin: center;
       justify-content:center;
-  
+
 
 
       }
@@ -161,10 +161,10 @@ footer{
 
 
 .hr2{
-  width:84%;
-  justify-content: center;
-  margin-left: auto;
-   margin-right: auto;
+    width:84%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 h3{
@@ -193,7 +193,6 @@ h3{
     height: auto;
     display: flex;
     margin: auto;
-
     object-fit: cover;
 }
 
@@ -212,6 +211,29 @@ h3{
     position: relative;
     float: right;
     word-spacing: 12px;
+
+
+}
+  iframe {
+    float:right;
+    border:none;
+    padding-left: 0px;
+    width: 430px;
+    height:200px;
+    z-index: 0;
+
+}
+
+
+.topflow{
+
+display:flex;
+}
+
+.column {
+
+flex:50%;
+padding:5px;
 
 
 }
