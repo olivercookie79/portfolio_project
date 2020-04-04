@@ -1,7 +1,5 @@
 
-// If the app variable already exists, then reuse it,
-// otherwise initialise it to an empty object
-// (only works for 'var' because of 'hoisting', google it)
+
 var app = app || {};
 
 app.controls = {
@@ -12,7 +10,7 @@ app.controls = {
 
 app.init = () => {
 
-  console.log('Hello my 3D W0rld!');
+
 
 
 
