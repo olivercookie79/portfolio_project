@@ -1,11 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 
- <br>
 
-<br>
 
-<table>
+
   <thead>
     <tr>
 
@@ -13,34 +11,27 @@
     </tr>
   </thead>
 
-  <tbody>
-    <div  class = "container">
 
-      <div class ="gridthumbs">
+    <div  class = "thumbs__container">
+
+    <div class ="gridthumbs">
     <% @portfolios.each do |portfolio|%>
+<div  class = "side_spacer">
 
-
-
-
-
+<div  class = "thumbs_space" <p>.....</p>
 
     <% image_tag portfolio.thumb_image %>
         <p><%portfolio.title %></p>
 
-
-
-
-
-        <%= link_to portfolio_path(portfolio) do %>
-
-            <%= image_tag portfolio.thumb_image %>
-
-
+ </div>
+ </div>
+      <%= link_to portfolio_path(portfolio) do %>
+        <%= image_tag portfolio.thumb_image %>
             <p><%portfolio.subtitle %></p>
             <p><%portfolio.content %></p>
 
             <div id = "output" ></div>
-          
+
 
 
           <% end %>
@@ -58,9 +49,9 @@
     </div>
 
 
-  </tbody>
 
-  </table>
+
+
 
 <br>
 
