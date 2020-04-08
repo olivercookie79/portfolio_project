@@ -1,12 +1,12 @@
 
-
 body {
-  padding-left: 1px;
+  display: flex;
   margin: 0;
   align-items: center;
   background-color: #384146;
   color: white;
   font-family: 'Orbitron', sans-serif;
+
 
 }
 
@@ -131,13 +131,11 @@ footer{
 
 }
 
-.clearfix{
-    clear: both;
-}
+
 
 h3{
     display: block;
-    flex-direction: row;
+
     padding-left: 125px;
     font-size: 18px;
     word-spacing: 2px;
@@ -149,69 +147,76 @@ h3{
 
 
 .pagestxt{
-    text-align: left;
-    padding-left: 125px;
-    margin-right: 120px;
-    font-size: 18px;
-    font-family: 'Tomorrow', sans-serif;
+  text-align: left;
+  padding-left: 125px;
+  margin-right: 120px;
+  font-size: 18px;
+  font-family: 'Tomorrow', sans-serif;
 }
 
 .shreel{
-    width: 84%;
-    height: auto;
-    display: flex;
-    margin: auto;
-    object-fit: cover;
+  width: 84%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  object-fit: cover;
 }
 
 
-  .contact{
-    display: inline-block;
-    content: inherit;
-    text-align: justify;
-    padding-left: 125px;
-    font-family: 'Tomorrow', sans-serif;
+.contact{
+  display: inline-block;
+  content: inherit;
+  text-align: justify;
+  padding-left: 125px;
+  font-family: 'Tomorrow', sans-serif;
 
 }
 
 
 .icons{
-    position: relative;
-    float: right;
-    word-spacing: 12px;
+  position: relative;
+  float: right;
+  word-spacing: 12px;
 }
 
 iframe {
-    display:block;
-    margin: auto;
-    border:none;
-    width: 1570px;
-    height:450px;
-    z-index: 0;
-    align-content: center;
+  display:block;
+  margin: auto;
+  border:none;
+  width: 1570px;
+  height:450px;
+  z-index: 0;
+  align-content: center;
 }
 
 .column {
-    flex:50%;
-    padding:5px;
+  flex:50%;
+  padding:5px;
 }
 
 
 
-.thumbs__container{
-    display: block;
-    margin:auto;
-    align-content: center;
+thumbs__container{
+  display: block;
+  border: 12px solid #red;
+  margin-left: auto;
+  margin-right: auto;
+  align-content:stretch;
+  justify-content:center;
+
 }
 
 .gridthumbs{
-    border: 5px solid #384146;
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content:center;
-    align-content: center;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-content: center;
+  max-width: 1300px;
+  margin: 0;
 }
+
 
 
 .thumbs_space{

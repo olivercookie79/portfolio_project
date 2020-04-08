@@ -2,6 +2,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.5,
+        maximum-scale=2.0, minimum-scale=1.2">
+
+
     <title> Oliver Cook | 3D Portfolio </title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -23,6 +29,7 @@
   </head>
 
   <body>
+    <div class = "content">
 <div><header>
         <nav><ul>
               <li><a href="<%= portfolios_path %>">PORTFOLIO</a></li>
@@ -67,6 +74,6 @@
     </footer>
     <br>
     <br>
-
+</div>
   </body>
 </html>
