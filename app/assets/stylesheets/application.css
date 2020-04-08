@@ -1,13 +1,14 @@
 
 body {
-  display: flex;
-  margin: 0;
-  align-items: center;
+
+  margin: auto;
+  width: 1440px;
   background-color: #384146;
   color: white;
   font-family: 'Orbitron', sans-serif;
-
-
+  align-items: center;
+  align-content: space-between;
+  border: 13px  black;
 }
 
 header {
@@ -182,11 +183,12 @@ h3{
 iframe {
   display:block;
   margin: auto;
-  border:none;
+  border: none;
   width: 1570px;
   height:450px;
   z-index: 0;
-  align-content: center;
+
+
 }
 
 .column {
@@ -196,12 +198,11 @@ iframe {
 
 
 
-thumbs__container{
-  display: block;
-  border: 12px solid #red;
+.thumbs__container{
+  display: flex;
   margin-left: auto;
   margin-right: auto;
-  align-content:stretch;
+  align-content:center;
   justify-content:center;
 
 }
@@ -212,9 +213,10 @@ thumbs__container{
   flex-direction: row;
   flex-wrap:wrap;
   justify-content:center;
+  align-self: center;
   align-content: center;
   max-width: 1300px;
-  margin: 0;
+  margin-left: 13px;
 }
 
 
