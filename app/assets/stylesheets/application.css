@@ -3,7 +3,7 @@ body {
 
   margin: auto;
   width: 1440px;
-  background-color: #384146;
+  background-color: #3e465c;
   color: white;
   font-family: 'Orbitron', sans-serif;
   align-items: center;
@@ -18,7 +18,7 @@ header {
   text-emphasis-color: white;
   word-spacing: 20px;
   font-size: 15px;
-  background-color:#384146;
+  background-color:#3e465c;
   padding-right: 112px;
   padding-top: 12px;
 }
@@ -116,7 +116,7 @@ a:active {
 footer{
   margin-left: 120px;
   margin-right: 120px;
-  background-color: #384146;
+  background-color: #3e465c;
 
 
 
@@ -222,6 +222,6 @@ iframe {
 
 
 .thumbs_space{
-  color:#384146
+  color:#3e465c
 
   }
