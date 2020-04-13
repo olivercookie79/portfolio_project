@@ -52,7 +52,7 @@ name {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-    }
+  }
 
 .top{
   font-size: 35px;
@@ -106,9 +106,8 @@ a:hover {
 
 a:active {
   text-decoration: underline;
-  text-decoration-color: green;
   border-bottom: 10px solid white;
-
+  text-decoration: none;
 
 }
 
@@ -185,7 +184,7 @@ iframe {
   margin: auto;
   border: none;
   width: 1570px;
-  height:450px;
+  height:350px;
   z-index: 0;
 
 
