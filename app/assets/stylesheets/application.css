@@ -9,6 +9,7 @@ body {
   align-items: center;
   align-content: space-between;
   border: 13px  black;
+  overflow-x: hidden;
 }
 
 header {
