@@ -12,6 +12,9 @@ body {
   overflow-x: hidden;
 }
 
+
+
+
 header {
   display:block;
   text-align: right;
@@ -24,12 +27,25 @@ header {
   padding-top: 12px;
 }
 
+
+@media  (max-width: 1375px){
+  header {
+    display:block;
+    font-size: 10px;
+    padding-left: 233px;
+    font-size: 23px;
+    text-align: center;
+  }
+}
+
 h1{
   text-align:left;
   font-size: 20px;
   padding-bottom: 18px;
   padding-left: 125px;
 }
+
+
 
 name {
   border: red;
@@ -54,6 +70,18 @@ name {
   margin-left: auto;
   margin-right: auto;
   }
+
+
+  @media  (max-width: 375px){
+    .hr {
+    width:45%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+        }
+
+      }
+
 
 .top{
   font-size: 35px;
@@ -84,7 +112,7 @@ li {
 }
 
 a:link {
-    text-decoration: none;
+    color: white;
     text-decoration-color: white;
 
 }
@@ -118,10 +146,15 @@ footer{
   margin-right: 120px;
   background-color: #3e465c;
 
-
-
 }
 
+@media  (max-width: 450px){
+  footer{
+    margin-left: 400px;
+    margin-right: 400px;
+      }
+
+}
 
 .hr2{
     display: block;
@@ -132,12 +165,26 @@ footer{
 
 }
 
+@media  (max-width: 370px){
+  .hr2 {
+  display: block;
+  width:45%;
+  justify-content: center;
+      }
 
+}
+
+/* @media  (min-width: 1000px){
+  .hr2 {
+  width:45%;
+  justify-content: center;
+      }
+
+} */
 
 h3{
     display: block;
-
-    padding-left: 125px;
+    margin-left: 120px;
     font-size: 18px;
     word-spacing: 2px;
     font-family: 'Orbitron', sans-serif;
@@ -145,6 +192,14 @@ h3{
 
 
 }
+
+@media  (max-width: 1000px){
+  h3 {
+    margin-left: 380px;
+
+      }
+
+    }
 
 
 .pagestxt{
@@ -191,6 +246,28 @@ iframe {
 
 }
 
+@media  (max-width: 1440px){
+  iframe {
+    display:block;
+    width: 1560px;
+    height:350px;
+
+  }
+
+}
+
+
+/* @media  (max-width: 1440px){
+  iframe {
+    display:block;
+    width: 1570px;
+    height:350px;
+
+  }
+
+} */
+
+
 .column {
   flex:50%;
   padding:5px;
@@ -207,6 +284,8 @@ iframe {
 
 }
 
+
+
 .gridthumbs{
 
   display: flex;
@@ -219,7 +298,14 @@ iframe {
   margin-left: 13px;
 }
 
+@media  (max-width: 1000px){
+  .gridthumbs{
+    flex-direction: row;
+    flex-wrap:wrap;
+    max-width:700px;
 
+  }
+}
 
 .thumbs_space{
   color:#3e465c
